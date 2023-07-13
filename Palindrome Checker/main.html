@@ -1,0 +1,66 @@
+<!--
+    Author: Stephen Hammonds
+-->
+
+<!DOCTYPE html> <!--This tells the browser that this is an HTML file-->
+<html lang="en"> <!--This tag encases the entire HTML document and provides metadata about the language it is written in-->
+<head> <!--This tag contains more metadata about the document like the character encoding used and the Title of the page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Welcome</title>
+</head>
+<body> <!--The Body is the area where all of the content we write will be displayed in the users browser window for them to see-->
+    <nav><h2>Navigation Area</h2>
+        <br>
+        <a href="../index.html">Steve and Jasmine's Schedule</a>
+        <br>
+        <a href="../Boards/boards.html">Boards</a>
+        <br>
+        <a href="../Game/game.html">Game</a>
+
+    </nav>
+    <br>
+    <header>
+    <h1>Please Log In</h1> <!--This displays the desired heading at the top of the web page-->
+    </header>
+
+    <!--The Form element is where we create a form to get user input with which we can later perform operations on such as input validation-->
+    <form id="formSubmit" onsubmit="return false">
+    First Name <input type="text" id="first" />
+    Last Name <input type="text" id="last" />
+    Zip Code <input type="number" id="code" />
+    <input type="submit" onclick="check()" />
+    </form>
+    <footer style="position: absolute; bottom: 0;">
+        Stephen Hammonds<br>
+        University of Advancing Technology<br>
+        2625 W. Baseline Road<br>
+        Tempe, AZ 85283-1056<br>
+    </footer>
+</body>
+<script> //The check function is ran after the user clicks the submit button
+    function check() {
+    //Variable declaration
+        var usr = document.getElementById('first').value + " " + document.getElementById('last').value;
+        var code = document.getElementById('code').value;
+
+        if (usr.length <21) { //Checks to see if the user's full name is at least 21 characters and reloads the page if it is not
+            alert("Warning: For security purposes, User Name must be more than 20 characters.");
+            location.reload;
+        }
+
+        if (code.length != 5) { //Checks to see if the user's Zip Code is exactly 5 characters and reloads the page if it is not
+            alert("Warning: Invalid Zip Code. Zip Code must be five digits long.");
+            console.log(code.length);
+            location.href('main.html');
+        }
+        else { //if the user input is successfully validated by the above if statements, the user will be taken to the Palindrome Checker webpage
+        location.replace('strings.html');
+        }
+
+    }
+    
+    
+</script>
+</html>

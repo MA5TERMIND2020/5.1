@@ -1,0 +1,120 @@
+<!--
+    Author: Stephen Hammonds
+    Created: 7-13-23
+-->
+<!DOCTYPE html> <!--This tells the browser that this is an HTML file-->
+<html lang="en"> <!--This tag encases the entire HTML document and provides metadata about the language it is written in-->
+<head> <!--This tag contains more metadata about the document like the character encoding used and the Title of the page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Steve's Site</title>
+</head>
+<body> <!--The Body is the area where all of the content we write will be displayed in the users browser window for them to see-->
+    <header>
+        <h1>Welcome!</h1>
+    </header>
+    <main>
+        <nav><h2>Navigation Area</h2>
+            <br>
+            <a href="./Boards/boards.html">Boards Page</a>
+            <br>
+            <a href="./Palindrome Checker/main.html">Palindrome Checker</a>
+            <br>
+            <a href="./Game/game.html">Game</a>
+
+        </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center style="text-decoration-line: underline; font-size: 5em;">Steve and Jasmine's Daily Schedule</center> <!--A cool tag to center content without having to use CSS-->
+        <table id="data" width="90%" border="2"> <!--Creates a Table-->
+            <col> <!--Defines the number of Columns we want to be in the Table-->
+            <col>
+            <col>
+            <col>
+
+            <th style="width: 25%; font-weight: 900; background-color: skyblue">Time Slot</th> <!--Creates the Headers for each of the Columns we just created-->
+            <th style="width: 25%; font-weight: 900; background-color: pink">Activity 1</th>
+            <th style="width: 25%; font-weight: 900; background-color: pink">Activity 2</th>
+            <th style="width: 25%; font-weight: 900; background-color: pink">Activity 3</th>
+
+            <tbody> <!--This tells the browser that we are now ready to putting data into the columns we just created-->
+                <tr id="rows"> <!--Each Row will consist of td elements which will encase the data we want to be placed in each cell-->
+                    <td>5am-6am</td>
+                    <td>Wake Up Routine</td>
+                    <td>Make Tea</td>
+                    <td>Shower</td>
+                </tr>
+                <tr>
+                    <td>7am-8am</td>
+                    <td>Breakfast</td>
+                    <td>School Work (Steve)</td>
+                    <td>Make-Up (Jasmine)</td>
+                </tr>
+                <tr>
+                    <td>8am-11:30am</td>
+                    <td>Plan YouTube Video</td>
+                    <td>Film</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>11:30-Noon</td>
+                    <td>Lunch</td>
+                    <td>Start Prepping Dinner</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Noon-1pm</td>
+                    <td>Physical Activity</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>1pm-4pm</td>
+                    <td>Structured Planning</td>
+                    <td>Pay Bills</td>
+                    <td>Errands/Misc. Duties</td>
+                </tr>
+                <tr>
+                    <td>4pm-5pm</td>
+                    <td>Gym</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>5pm-6pm</td>
+                    <td>Dinner</td>
+                    <td>Get Scarlett to Bed</td>
+                    <td>Lock House Down</td>
+                </tr>
+                <tr>
+                    <td>6pm-7pm</td>
+                    <td>School Work (Steve)</td>
+                    <td>Shower</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>7pm-8pm</td>
+                    <td>Get Ready For Bed</td>
+                    <td>Relaxing Time</td>
+                    <td>Sleep</td>
+                </tr>
+            </tbody> <!--After we create the desired number of Rows we want, we close the tbody tag and then the table tag-->
+
+
+        </table>
+       
+
+        
+    </main>
+    <footer style="position: absolute; bottom: 0;"> <!--This is the Footer and is positioned at the very bottom of the page-->
+          Stephen Hammonds<br>
+          University of Advancing Technology<br>
+          2625 W. Baseline Road<br>
+          Tempe, AZ 85283-1056<br>
+    </footer>
+</body>
+</html>

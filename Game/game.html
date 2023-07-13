@@ -1,0 +1,41 @@
+<!--
+    Author: Stephen Hammonds
+-->
+
+<!DOCTYPE html> <!--This tells the browser that this is an HTML file-->
+<html lang="en"> <!--This tag encases the entire HTML document and provides metadata about the language it is written in-->
+<head> <!--This tag contains more metadata about the document like the character encoding used and the Title of the page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Game_Code.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Stephen's Game</title>
+</head>
+<body> <!--The Body is the area where all of the content we write will be displayed in the users browser window for them to see-->
+    <nav><h2>Navigation Area</h2>
+        <br>
+        <a href="../index.html">Steve and Jasmine's Schedule</a>
+        <br>
+        <a href="../Palindrome Checker/main.html">Palindrone Checker</a>
+        <br>
+        <a href="../Boards/boards.html">Boards</a>
+
+    </nav>
+    <br>
+    <header>
+    <h1>&#128540;Welcome to Even Stephen's Casino!!!</h1> <!--This displays the desired heading at the top of the web page-->
+    </header>
+    <p>This is a very simple but addictive game. Simply roll the dice by clicking the button below. If one of the dice lands on an even number,
+        you Win. Otherwise, you Lose.
+    </p>
+    <div id="updateDiv">Ready to Play?</div> <!--This div initially writes "Ready to Play? to the browser window, but it is updated during the game using JavaScript-->
+    <div id="updateDiv2"></div><!--This div is initially empty, but it is updated with the player's Win/Loss ratio during the game using JavaScript-->
+    <button id="updateBtn" onclick="playGame()">Roll the Dice</button> <!--This creates a button that rolls the dice for the player when clicked-->
+    <footer style="position: absolute; bottom: 0; text-align: left;">
+        Stephen Hammonds<br>
+        University of Advancing Technology<br>
+        2625 W. Baseline Road<br>
+        Tempe, AZ 85283-1056<br>
+    </footer>
+</body>
+</html>
